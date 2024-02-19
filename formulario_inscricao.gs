@@ -11,8 +11,7 @@ const linkBeginnerCommunity = 'https://classroom.google.com/c/NjQ1NzUxOTcyMDkx?c
 const linkElementaryIFRN = 'https://classroom.google.com/c/NTA1NTAxNTY0MjQ1?cjc=k7pq2le'; //link to access Google Classroom - Elementary IFRN
 const linkElementaryCommunity = 'https://classroom.google.com/c/NjQ1NzYxNzI1MTY5?cjc=3gsbf5h'; //link to access Google Classroom - Elementary External Community
 
-//ALTERAR EM BREVE - INCOMPATIBILIDADE COM EMAILS FORA DO IFRN
-const linkConversation = 'https://sites.google.com/view/ifmeetings/%C3%A1rea-do-aluno/conversation?authuser=0';
+const linkConversation = 'https://sites.google.com/view/ifmeetings/%C3%A1rea-do-aluno/conversation';
 
 function myFunction() {
 
