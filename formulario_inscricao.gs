@@ -37,10 +37,9 @@ function conversation(){
       var email = workss.getRange(sindex,6).getValue();
       var subject=" Welcome to IF Meetings - Conversation Course ";
       var nameEmail= "IF Meetings - Conversation English Course";
-      var body = 'Hey! Welcome to IF Meetings\' conversation course!<br><br>'+'&#128205; Our activities and classes will primarily occur through Google Meetings.<br><br>'+'&#127760; <strong>Our class time is available on our website (click the following link):</strong>'+ linkConversation + '<br><br>' + '#x23F0; Reminder: You are the one who makes your schedule, then <strong> it is not mandatory to attend every class to receive our certificate.</strong><br><br>' + '&#128226; Frequent Q&A: <br> <ul> <li>Q:\'How many hours do I have to attend to get the certificate?\'<ul>A: You have to attend, at least, 15 classes (15 hours).</ul></li><li>Q:\'If I miss a class, would it have a negative impact on getting my certificate? How could I catch up to my classmates?\'<ul>A: Missing a class does not significantly affect the attainment of the certificate. Additionally, conversation classes do not follow a planned schedule, so you would not be at a disadvantage compared to your classmates.</ul></li></ul><br><br>'+'For further explanation, feel free to contact us through email <strong>ifrnmeetings@gmail.com</strong> or instagram <strong>ifrn_meetings</strong><br><br>' + 'Hope to see you soon!<br>Best regards,<br>IF Meetings\' Team.';
+      var body = 'Hey! Welcome to IF Meetings\' conversation course!<br><br>'+'&#128205; Our activities and classes will primarily occur through Google Meetings.<br><br>'+'&#127760; <strong>Our class time is available on our website (click the following link):</strong>'+ linkConversation + '<br><br>' + '&#x23F0; Reminder: You are the one who makes your schedule, then <strong> it is not mandatory to attend every class to receive our certificate.</strong><br><br>' + '&#128226; Frequent Q&A: <br> <ul> <li>Q:\'How many hours do I have to attend to get the certificate?\'<ul>A: You have to attend, at least, 15 classes (15 hours).</ul></li><li>Q:\'If I miss a class, would it have a negative impact on getting my certificate? How could I catch up to my classmates?\'<ul>A: Missing a class does not significantly affect the attainment of the certificate. Additionally, conversation classes do not follow a planned schedule, so you would not be at a disadvantage compared to your classmates.</ul></li></ul><br><br>'+'For further explanation, feel free to contact us through email <strong>ifrnmeetings@gmail.com</strong> or instagram <strong>ifrn_meetings</strong><br><br>' + 'Hope to see you soon!<br>Best regards,<br>IF Meetings\' Team.';
 
-      
-     GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail});
+      GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail, replyTo: "ifrnmeetings@gmail.com"});
 
   // console.log('conversation'); // debug
 }
@@ -59,7 +58,7 @@ function elementary(){
 
       } 
 
-     GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail});
+    GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail, replyTo: "ifrnmeetings@gmail.com"});
     //  console.log('elementary'); //debug
 }
 
@@ -77,6 +76,6 @@ function beginner(){
       
       } 
 
-     GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail});  
+     GmailApp.sendEmail(email, subject, "", {htmlBody: body, name:nameEmail, replyTo: "ifrnmeetings@gmail.com"});
     //  console.log('beginner'); debug
 }
