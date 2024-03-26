@@ -1,5 +1,5 @@
-const form= FormApp.openById('1uanVjY5LHhkS1p8y_UJBPySQvcmew7d9i5SSX1_k9BE'); //forms access
-const spreadsheet= SpreadsheetApp.openById('1WkzZtzOY9RWQFFX4g4WC4bhH1WXTV_lEB_UUwcO5oPE'); //spreadsheet access
+const form= FormApp.openById(''); //forms access
+const spreadsheet= SpreadsheetApp.openById(''); //spreadsheet access
 const workss = spreadsheet.getSheetByName('Respostas ao formulário 1');// working spreadsheet
 
 var lastRow=workss.getLastRow();
